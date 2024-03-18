@@ -1,0 +1,43 @@
+@import "../../style.scss";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-black);
+  .footer_item {
+    display: flex;
+    padding: 5rem;
+    width: 80%;
+    @include mb {
+      width: 100%;
+      padding: 1.5rem;
+      flex-direction: column;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      flex: 1;
+      h3 {
+        color: white;
+      }
+      .socials {
+        display: flex;
+        gap: 1.5rem;
+        height: 24px;
+        cursor: pointer;
+      }
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      flex: 1;
+      p {
+        color: white;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import "../../style.scss";
+
+.bottom {
+  background-color: var(--color-black-primary);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  @include mb {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  .items {
+    display: flex;
+    gap: 2rem;
+    @include mb {
+      text-align: center;
+      flex-direction: column;
+    }
+  }
+  a {
+    cursor: pointer;
+    color: white;
+  }
+  p {
+    color: white;
+  }
+}

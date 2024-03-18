@@ -1,0 +1,47 @@
+@import "../../style.scss";
+
+.header {
+  display: flex;
+  background-color: var(--color-black);
+  @include mb {
+    flex-direction: column;
+  }
+  .left {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 525px;
+    h1 {
+      position: absolute;
+      color: white;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(40%);
+    }
+  }
+  .right {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    @include mb {
+      padding: 1.5rem;
+    }
+    gap: 1rem;
+    h4 {
+      color: white;
+      width: 90%;
+    }
+    p {
+      width: 90%;
+      color: white;
+    }
+  }
+}
